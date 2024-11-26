@@ -7,11 +7,14 @@
     */
 
     //Entrada
+    let multiplicador = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let ntabuada = Number(prompt(`Insira o número da tabuada que você deseja ver`))
 
-
-    //Processamento
-
-
+    for(item of multiplicador){
+        let n = ntabuada*item
+       document.write(`${ntabuada} * ${item} = ${n}<br>`)
+    }
     //Saída
+    
     
 </script>
