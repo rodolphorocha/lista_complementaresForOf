@@ -6,7 +6,7 @@
     */
 
     //Entrada
-    const palavraDoUsuario = prompt(`Informe uma palavra`);
+    const palavraDoUsuario = prompt(`Informe uma palavra`).toLowerCase();
 
 
     //Processamento
@@ -14,10 +14,15 @@
     let consoantes = []
     Array.from(palavraDoUsuario);
     for( let letra of palavraDoUsuario){
-      
+      if(letra =="a" || letra =="e" || letra == "i" || letra == "o" || letra == "u"){
+        vogais.push(letra)
+      } else{
+        consoantes.push(letra)
+      }
     }
 
 
     //Saída
+    alert(`A palavra ${palavraDoUsuario} contém ${vogais.length} vogais e ${consoantes.length} consoantes.`)
 
 </script>

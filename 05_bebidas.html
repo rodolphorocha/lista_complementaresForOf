@@ -7,11 +7,14 @@
     */
 
     //Entrada
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    let bebidasPermitidas = [];
 
-
-    //Processamento
-
-
-    //Saída
-
+    for (let bebida of bebidas){
+        let alcool = prompt(`A bebida possui alcool? (sim ou não)`).toLowerCase()
+        if( alcool === "não"){
+            bebidasPermitidas.push(bebida)    
+        }
+    }
+    document.write(`${bebidasPermitidas.join(", ")}`)
 </script>
