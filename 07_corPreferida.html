@@ -8,11 +8,20 @@
     */
 
     //Entrada
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    coresFav = [];
 
 
     //Processamento
+    for(let item of cores){
+        let fav = prompt(`Você deseja adicionar a ${item} a lista de cores favoritas? (sim/não)`).toLowerCase()
+        if (fav == "sim"){
+            coresFav.push(item);
+        }
+    }
 
 
     //Saída
+    document.write(`Suas cores favoritas são ${coresFav.length}:<br> ${coresFav.join(", ")}`);
 
 </script>
