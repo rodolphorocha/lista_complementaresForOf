@@ -9,10 +9,26 @@
 
     //Entrada
     let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
-
+    let rs = []
+    let pr = []
+    let sc = []
     //Processamento
+    for (let  item of cidades){
+        let estado = prompt(`Informe o estado da cidade (SC, PR, RS) : ${item}`).toLowerCase();
+        if (estado == "sc"){
+            sc.push(item)
+        } else if (estado == "pr"){
+            pr.push(item)
+        } else {
+            rs.push(item)
+        }
+    }
+   
 
 
     //Saída
+    document.write(`Santa Catarina: ${sc.join(", ")}<br>
+    Rio Grande do Sul: ${rs.join(", ")} <br>
+    Paraná: ${pr.join(", ")}`)
 
 </script>
